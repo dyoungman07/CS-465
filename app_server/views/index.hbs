@@ -1,2 +1,79 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<!-- Customer-facing home page rendered with Handlebars. -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+    <div id="background">
+        <div id="page">
+            {{> header }}
+
+            <div id="contents">
+                <div id="adbox">
+                    <img src="/images/sea-sound.jpg" alt="Tropical beach and ocean">
+                    <h1>Enjoy the Summer with Us!</h1>
+                    <p>
+                        Welcome to Travlr Getaways. Explore beautiful destinations, enjoy relaxing resorts, and find your next vacation with us.
+                    </p>
+                    <p><a href="/travel">Explore our trips</a></p>
+                </div>
+
+                <div id="main">
+                    <div class="box">
+                        <div>
+                            <div>
+                                <h3>Latest Blog</h3>
+                                <ul>
+                                    <li>
+                                        <h4><a href="/news.html">2023 Best Beaches Contest Winners</a></h4>
+                                        <span>April 02, 2023</span>
+                                        <p>
+                                            Discover some of the world's most beautiful beaches and get ideas for your next getaway.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4><a href="/news.html">Top 10 Diving Spots</a></h4>
+                                        <span>May 29, 2023</span>
+                                        <p>
+                                            Explore amazing diving locations and plan an underwater adventure.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="testimonials" class="box">
+                        <div>
+                            <div>
+                                <h3>Testimonials</h3>
+                                <p>
+                                    “Travlr Getaways helped us plan a relaxing vacation. We had a great experience from start to finish.”
+                                    <span>- <a href="/">A Happy Traveler</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sidebar">
+                    <div class="section">
+                        <a href="/rooms.html"><img src="/images/rooms.png" alt="Resort rooms"></a>
+                    </div>
+                    <div class="section">
+                        <a href="/travel"><img src="/images/dive-site.png" alt="Diving destinations"></a>
+                    </div>
+                    <div class="section">
+                        <a href="/meals.html"><img src="/images/food.png" alt="Food and dining"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{> footer }}
+    </div>
+</body>
+</html>
